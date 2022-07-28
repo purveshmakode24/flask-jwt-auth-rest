@@ -1,4 +1,4 @@
-## Flask-Rest
+## Flask-JWT-Auth-Rest
 
 #### Some Important Commands:
 
