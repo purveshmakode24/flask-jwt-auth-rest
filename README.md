@@ -5,6 +5,7 @@
 STEP 1:  ```flask run``` or ```python app.py``` to start the app.
 
 STEP 2 (OPTION 1): Using Flask-Migrate db commands [RECOMMENDED]
+> Existing manually created (without ORM) tables is affected (DELETED) BY below commands, Migrate command simply checks the updated Models.py file and replace exisiting tables with brand new or updated ORM tables or models from models.py. So existance of Tables totally depends on the Models.py file which is taken care by Flask-Migrate Alembic.
 
 (A) ```flask db init``` to initalize db for SQLalchemy db migrations [one time] (Module used flask-migrate) (don't require to delete db, this command to alter existing Model/db table).
 
@@ -14,7 +15,9 @@ STEP 2 (OPTION 1): Using Flask-Migrate db commands [RECOMMENDED]
 
 STEP 2 (OPTION 2): Using SQLALchemy db command 
 
-> Alternative to create db or all db tables initally (note: requires to delete exisiting db if any before making any changes to model)
+> Alternative to create db or all db tables initally (note: requires to delete exisiting db if any before making any changes to model) 
+
+> Existing manually created (without ORM) tables won't affect by executing this command. It will keep exsiting tables and add other ORM tables
 
 (A) In Python interpreter, or just by calling create_all() method of SQLALchemy db object.
 
