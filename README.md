@@ -1,6 +1,6 @@
 ## Flask-Rest
 
-Some Important Commands:
+#### Some Important Commands:
 
 1) ```flask run``` or ```python app.py``` to start the app.
 > Flask-SQLAlchemy (ORM) based db commands
@@ -21,7 +21,22 @@ In Python interpreter
 For more details refer Flask-MySQLAlchemy official docs.
 URL: https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/#a-minimal-application
 
+#### Note ([REF](https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application)):
 
-Other Important References:
+If you want to use another database engine such as PostgreSQL or MySQL, you’ll need to use the proper URI.
+
+For PostgreSQL, use the following format:
+
+```
+postgresql://username:password@host:port/database_name
+```
+For MySQL:
+```
+mysql://username:password@host:port/database_name
+```
+For more, see the [SQLAlchemy documentation for engine configuration](https://docs.sqlalchemy.org/en/14/core/engines.html).
+
+
+#### Other Important References:
 1) https://www.section.io/engineering-education/flask-crud-api/
 2) https://geekflare.com/securing-flask-api-with-jwt/
