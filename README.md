@@ -25,8 +25,6 @@ here, db = SQLAlchemy(app)
 >> db.create_all()
 ```
 
-
-
 For more details refer Flask-MySQLAlchemy official docs.
 URL: https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/#a-minimal-application
 
